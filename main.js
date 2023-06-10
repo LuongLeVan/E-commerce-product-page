@@ -22,6 +22,7 @@ const imagesBox = document.querySelectorAll('.img-box');
 const imageMainBox = document.querySelector('.image-main-box'); 
 const overlay = document.querySelector('.overlay');
 const btnCloseModal = document.querySelector('.close-modal');
+const modals = document.querySelector('.modal');
 let totalQuantity = 1;
 let totalPrice = 0;
 const product = {
@@ -194,10 +195,21 @@ function removeCurrentPreviewImageBox(){
 function handleCloseBox(){
     overlay.classList.add('hidden');
     overlay.classList.remove('block');
-}
+    modals.classList.add('hidden');
+    modals.classList.remove('block');
+};
 
 function handleShowModal(){
     overlay.classList.add('block');
     overlay.classList.remove('hidden');
+    modals.classList.add('block');
+    modals.classList.remove('hidden');
 
-}
+};
+overlay.addEventListener('click', () => {
+    overlay.classList.add('hidden');
+    overlay.classList.remove('block');
+    modals.classList.add('hidden');
+    modals.classList.remove('block');
+    
+});
