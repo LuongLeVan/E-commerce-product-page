@@ -1,0 +1,212 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <link rel="stylesheet" href="style.css">
+  <link rel="shortcut icon" href="./ecommerce-product-page-main/images/favicon-32x32.png" type="image/x-icon">
+  <script src="https://cdn.tailwindcss.com"></script>
+  <script defer src="main.js"></script>
+  <title>Landing Page</title>
+</head>
+<body>
+  <div class="w-full p-8 h-[80px] bg-white flex justify-between md:px-[114px] md:py-[52px] md:border-b border-gray-400">
+    <div class="flex">
+      <button class="btn-open hover:opacity-80 md:hidden">
+        <img class="w-6 mr-4" src="./ecommerce-product-page-main/images/icon-menu.svg" alt="">
+      </button>
+      <div><img src="./ecommerce-product-page-main/images/logo.svg" alt=""></div>
+      <div class="md:block hidden ml-12">
+        <div class=" flex justify-center items-center">
+          <div class="item mx-3">
+            <a href="#" class="hover:opacity-80 font-medium text-[16px] text-gray-500">Collection</a>
+            <div class="scroll"></div>
+          </div>
+          <div class="item mx-3">
+
+            <a href="#" class="hover:opacity-80 font-medium text-[16px] text-gray-500 ">Men</a>
+            <div class="scroll"></div>
+          </div>
+          <div class="item mx-3">
+
+            <a href="#" class="hover:opacity-80 font-medium text-[16px] text-gray-500">Women</a>
+            <div class="scroll"></div>
+          </div>
+          <div class="item mx-3">
+
+            <a href="#" class="hover:opacity-80 font-medium text-[16px] text-gray-500 ">About</a>
+            <div class="scroll"></div>
+          </div>
+          <div class="item mx-3">
+
+            <a href="#" class="hover:opacity-80 font-medium text-[16px] text-gray-500">Contact</a>
+            <div class="scroll"></div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="flex justify-end ">
+      <button class="cart relative">
+        <img  class="w-8 h-8 mr-8 hover:opacity-80" src="./ecommerce-product-page-main/images/icon-cart.svg" alt="">
+        <span class="px-4 quantity-item absolute top-[-16px] right-2 rounded-full text-white py-[1px] bg-[#f47e23] hidden"></span>
+      </button>
+      <div><img class="w-10 h-10 hover:border-2 border-[#f47e23] hover:rounded-full" src="./ecommerce-product-page-main/images/image-avatar.png" alt=""></div>
+    </div>
+  </div>
+
+  <!-- Cart -->
+  <div class="p-6 modal-cart fixed  top-24 hidden left-0 ml-2 w-[96%] md:w-[25%] md:left-[1000px] h-[260px] shadow-[0px_10px_1px_rgba(221,_221,_221,_1),_0_10px_20px_rgba(204,_204,_204,_1)] rounded-2xl bg-white z-[999]">
+    <div class="flex justify-between items-center">
+      <h3 class="text-[24px] font-semibold">Cart</h3>
+      <button class="close-modal"><img src="./ecommerce-product-page-main/images/icon-close.svg" alt=""></button>
+    </div>
+    <hr>
+    <p class="text-center detail font-semibold text-[20px] mt-[20%] text-gray-500">Your cart is empty.</p>
+      <div class="cart-product hidden">
+        <div class="flex items-center justify-between mt-[20%]">
+          <div><img class="w-16 rounded-md" src="./ecommerce-product-page-main/images/image-product-1.jpg" alt=""></div>
+          <div class="ml-4">
+            <div>Fall Limited Edition Sneakers</div>
+            <div class="flex">
+              <div class="flex items-center price">$125.00 x 3</div>
+              <div class="font-semibold prices ml-3 text-[16px]">$375.00</div>
+            </div>
+          </div>
+          <div>
+            <button class="ml-6 delete">
+              <img src="./ecommerce-product-page-main/images/icon-delete.svg" alt="">
+            </button>
+          </div>
+            </div>
+      </div>
+  </div>
+
+  <!-- Menu Item -->
+  <div class="fixed menu-mobile hidden p-6 bg-white h-full w-[300px] top-0 left-0 z-[999]">
+    <button class="hover:opacity-80 btn-close">
+      <img src="./ecommerce-product-page-main/images/icon-close.svg" alt="">
+    </button>
+    <div class="mt-12 text-[24px] font-semibold">
+      <div class="item">
+        <a href="#" class="hover:opacity-80 ">Collection</a>
+        <div class="scroll"></div>
+      </div>
+      <div class="my-3 item">
+        <a href="#" class="hover:opacity-80">Men</a>
+        <div class="scroll"></div>
+
+      </div>
+      <div class="item">
+        <a href="#" class="hover:opacity-80">Women</a>
+        <div class="scroll"></div>
+
+      </div>
+      <div class="my-3 item">
+        <a href="#" class="hover:opacity-80">About</a>
+        <div class="scroll"></div>
+
+      </div>
+      <div class="item">
+        <a href="#" class="hover:opacity-80">Contact</a>
+        <div class="scroll"></div>
+
+      </div>
+    </div>
+  </div>
+
+  <div class="md:flex md:justify-between md:px-[114px] md:py-[52px] md:pb-0">
+    <div class="relative w-full  h-[400px] overflow-hidden md:static md:w-[100%]">
+      <button class="absolute md:hidden previous top-[50%] border border-white rounded-full w-12 h-12 text-center bg-white ml-4 pl-4 z-50">
+        <img src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
+      </button>
+      <div class="">
+        <div><img class="w-full image-main absolute md:static slide top-0 left-0 opacity-0 md:opacity-100 h-full md:w-[502px] md:max-h-[502px] rounded-[8px] active " src="./ecommerce-product-page-main/images/image-product-1.jpg" onclick="handleShowModal()" alt=""></div>
+        <div class="md:block hidden">
+          <div class="flex">
+            <img id="pr-1" class="absolute bottom-0 preview z-50 rounded-lg actived w-28" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+            <img id="pr-2" class="absolute bottom-0 preview left-[232px] z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
+            <img id="pr-3" class="absolute bottom-0 preview left-[350px] z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
+            <img id="pr-4" class="absolute bottom-0 preview left-[470px] z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
+          </div>
+        </div>
+      </div>
+      
+      <img class="w-full absolute slide top-0 left-0 opacity-0 h-full md:w-[502px] md:h-[502px] rounded-lg md:hidden" src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="">
+      <img class="w-full absolute slide top-0 left-0 opacity-0 h-full md:w-[502px] md:h-[502px] rounded-lg md:hidden" src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="">
+      <img class="w-full absolute slide top-0 left-0 opacity-0 h-full md:w-[502px] md:h-[502px] rounded-lg md:hidden" src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="">
+      <button class="absolute next md:hidden top-[50%] right-4 border border-white rounded-full w-12 h-12 text-center bg-white ml-4 pl-4 z-50">
+        <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="">
+      </button>
+      
+    </div>
+
+    
+
+
+    <div class="p-6">
+      <h3 class="text-[#f47e23] md:w-[70%] font-semibold uppercase text-[18px]">sneaker company</h3>
+      <h1 class="font-bold text-[30px] md:w-[70%] w-[100%] md:text-[42px] md:font-[650]">Fall Limited Edition Sneakers</h1>
+      <p class="py-3 text-gray-500 font-normal md:w-[70%] text-[16px]">Lorem ipsum dolor sit amet consectetur adipisicing elit. Corporis sit in itaque nostrum quos commodi similique exercitationem, dolore odio error corrupti quam quibusdam modi facilis minus, cum autem, officiis quidem!</p>
+      <div class="flex items-center justify-between mb-2 md:w-[70%]">
+        <div class="flex w-full items-center">
+          <span class="text-[30px] font-bold">$125.00</span>
+          <div><span class="text-[#f47e23]  text-[16px] px-2 py-1 md:text-[18px] ml-2 md:px-[1] md:py-[2px] md:mt-2 rounded-md bg-[#ffeee0] font-bold mr-24 md:ml-4">50%</span></div>
+        </div>
+        <span class="text-gray-400 font-semibold text-[22px] line-through md:hidden">$250.00</span>
+      </div>
+      <div class="hidden md:block"><span class="text-gray-400 font-semibold text-[22px] line-through hid">$250.00</span></div>
+
+      <div class="md:flex md:items-center md:w-[70%]">
+        <div class="flex justify-between items-center p-4 bg-[#f7f8fd] h-[60px] rounded-md md:w-[60%] md:relative">
+          <button class="minus"><img class="md:w-4 w-12 md:absolute md:z-50 md:left-5" src="./ecommerce-product-page-main/images/icon-minus.svg" alt=""></button>
+          <div class="font-semibold text-[24px]">
+            <input type="number" name="quantity" disabled id="quantity" value="1" class="block text-center md:w-full bg-transparent">
+          </div>
+          <button class="plus"><img class="md:w-4 w-12  md:absolute md:right-5 md:top-6" src="./ecommerce-product-page-main/images/icon-plus.svg" alt=""></button>
+        </div>
+        <button class="flex add-to-cart justify-center mt-3 text-white items-center p-4 bg-[#f47e23] w-full h-[60px] rounded-md md:ml-4 md:w-[70%]">
+          <div class="mr-4">
+            <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="white" fill-rule="nonzero"/></svg>
+          </div>
+          <span class="font-bold text-[20px]">Add to cart</span>
+        </button>
+      </div>
+    </div>
+    <!-- LightBox -->
+ <div class="overlay z-[999] hidden">
+  <button  class="font-semibold text-white text-[32px] absolute left-[66%] top-4" onclick="handleCloseBox()">
+    &times;
+  </button>
+  <div>
+    <button onclick="nextSlide()" class="absolute top-[40%] left-[30%] pl-2 z-50 border border-white rounded-full w-8 h-8 bg-white">
+      <img  src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
+    </button>
+    <img class="w-[450px] image-main-box rounded-lg absolute top-16 left-[31%]" src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="">
+    <button class="absolute top-[40%] right-[40.4%] pl-2 z-50 border border-white rounded-full w-8 h-8 bg-white">
+      <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="">
+    </button>
+  </div>
+    <div class="flex h-full w-full text-center absolute top-[80%] left-[30%]">
+      <div>
+        <img  class="w-28 rounded-lg img-box actvied" id="box-1" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+      </div>
+      <div class="mx-3">
+        <img  class="w-28 rounded-lg img-box" id="box-2" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
+      </div>
+      <div>
+        <img  class="w-28 rounded-lg img-box" id="box-3" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
+      </div>
+      <div class="ml-3">
+        <img  class="w-28 rounded-lg img-box" id="box-4" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
+      </div>
+    </div>
+</div>
+<!-- LightBox -->
+
+
+  </div>
+</body>
+</html>
+
+ 

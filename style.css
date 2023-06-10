@@ -1,0 +1,32 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+.actived{
+    border: 3px solid orange;
+    opacity: 0.7;
+}
+.overlay{
+    position: fixed;
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: rgba(0, 0, 0, 0.3);
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    
+}
+.item:hover .scroll{
+    width: 100%;
+}
+
+.scroll{
+    display: block;
+    width: 0%;
+    height: 2px;
+    margin-top: 5px;
+    background-color: #f47e23;
+    transition: width .5s;
+}
