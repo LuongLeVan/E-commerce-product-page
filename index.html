@@ -8,7 +8,7 @@
   <link rel="shortcut icon" href="./ecommerce-product-page-main/images/favicon-32x32.png" type="image/x-icon">
   <script src="https://cdn.tailwindcss.com"></script>
   <script defer src="main.js"></script>
-  <title>Landing Page</title>
+  <title>E-commerce product page</title>
 </head>
 <body>
   <div class="w-full p-8 h-[80px] bg-white flex justify-between md:mx-[114px] md:py-[52px] md:border-b md:px-0 md:max-w-[1200px] border-gray-400">
@@ -117,19 +117,19 @@
 
   <div class="md:flex md:justify-between md:px-[114px] md:py-[52px] md:pb-0">
     <div class="relative w-full  overflow-hidden md:static md:w-[100%]">
-      <button class="absolute md:hidden previous top-[50%] border border-white rounded-full w-12 h-12 text-center bg-white ml-4 pl-4 z-50">
+      <button class="absolute  md:hidden previous top-[50%] border border-white rounded-full w-12 h-12 text-center bg-white ml-4 pl-4 z-50">
         <img src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
       </button>
       <div class="flex-col">
         <div class="">
-          <img class="w-full image-main md:static slide top-0 left-0 opacity-0 md:opacity-100 h-full md:w-[502px] md:max-h-[502px] rounded-[8px] active " src="./ecommerce-product-page-main/images/image-product-1.jpg" onclick="handleShowModal()" alt="">
+          <img class="w-full image-main hover:cursor-pointer md:static slide top-0 left-0  md:opacity-100 h-full md:w-[502px] md:max-h-[502px] rounded-[8px] active " src="./ecommerce-product-page-main/images/image-product-1.jpg" onclick="handleShowModal()" alt="">
         </div>
         <div class="md:block hidden">
           <div class="flex mt-4 mb-12">
-            <img id="pr-1" class="bottom-0 preview z-50 rounded-lg actived w-28" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
-            <img id="pr-2" class="bottom-0 preview mx-4 z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
-            <img id="pr-3" class="bottom-0 preview  z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
-            <img id="pr-4" class="bottom-0 preview ml-4 z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
+            <img id="pr-1" class="bottom-0 hover:cursor-pointer preview z-50 rounded-lg actived w-28" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+            <img id="pr-2" class="bottom-0 hover:cursor-pointer preview mx-4 z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
+            <img id="pr-3" class="bottom-0 hover:cursor-pointer preview  z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
+            <img id="pr-4" class="bottom-0 hover:cursor-pointer preview ml-4 z-50 rounded-lg w-28" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
           </div>
         </div>
       </div>
@@ -161,13 +161,13 @@
 
       <div class="md:flex md:items-center md:w-[70%]">
         <div class="flex justify-between items-center p-4 bg-[#f7f8fd] h-[60px] rounded-md md:w-[60%] md:relative">
-          <button class="minus"><img class="md:w-4 w-12 md:absolute md:z-50 md:left-5" src="./ecommerce-product-page-main/images/icon-minus.svg" alt=""></button>
+          <button class="minus"><img class="md:w-4 w-4 md:absolute md:z-50 md:left-5" src="./ecommerce-product-page-main/images/icon-minus.svg" alt=""></button>
           <div class="font-semibold text-[24px]">
             <input type="number" name="quantity" disabled id="quantity" value="1" class="block text-center md:w-full bg-transparent">
           </div>
-          <button class="plus"><img class="md:w-4 w-12  md:absolute md:right-5 md:top-6" src="./ecommerce-product-page-main/images/icon-plus.svg" alt=""></button>
+          <button class="plus"><img class="md:w-4 w-4  md:absolute md:right-5 md:top-6" src="./ecommerce-product-page-main/images/icon-plus.svg" alt=""></button>
         </div>
-        <button class="flex add-to-cart justify-center mt-3 text-white items-center p-4 bg-[#f47e23] w-full h-[60px] rounded-md md:ml-4 md:w-[70%]">
+        <button class="flex add-to-cart justify-center mt-3 hover:opacity-90 text-white items-center p-4 bg-[#f47e23] w-full h-[60px] rounded-md md:ml-4 md:w-[70%]">
           <div class="mr-4">
             <svg width="22" height="20" xmlns="http://www.w3.org/2000/svg"><path d="M20.925 3.641H3.863L3.61.816A.896.896 0 0 0 2.717 0H.897a.896.896 0 1 0 0 1.792h1l1.031 11.483c.073.828.52 1.726 1.291 2.336C2.83 17.385 4.099 20 6.359 20c1.875 0 3.197-1.87 2.554-3.642h4.905c-.642 1.77.677 3.642 2.555 3.642a2.72 2.72 0 0 0 2.717-2.717 2.72 2.72 0 0 0-2.717-2.717H6.365c-.681 0-1.274-.41-1.53-1.009l14.321-.842a.896.896 0 0 0 .817-.677l1.821-7.283a.897.897 0 0 0-.87-1.114ZM6.358 18.208a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm10.015 0a.926.926 0 0 1 0-1.85.926.926 0 0 1 0 1.85Zm2.021-7.243-13.8.81-.57-6.341h15.753l-1.383 5.53Z" fill="white" fill-rule="nonzero"/></svg>
           </div>
@@ -180,30 +180,33 @@
 
 </div>
 <div class="hidden modal z-[999]">
-  <button  class="font-semibold text-white text-[32px] absolute left-[59%] top-4" onclick="handleCloseBox()">
+  <button  class="font-semibold text-white text-[32px] absolute left-[59%] top-4 hover:opacity-80" onclick="handleCloseBox()">
     &times;
   </button>
   <div>
-    <button class="absolute top-[40%] left-[30%] pl-2 z-50 border border-white rounded-full w-8 h-8 bg-white">
+   <!--  <button class="absolute previous top-[40%] left-[30%] pl-2 z-50 border border-white rounded-full w-8 h-8 bg-white">
       <img  src="./ecommerce-product-page-main/images/icon-previous.svg" alt="">
-    </button>
-    <img class="w-[450px] image-main-box rounded-lg absolute top-16 left-[31%]" src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="">
-    <button class="absolute top-[40%] left-[904px] pl-2 z-50 border border-white rounded-full w-8 h-8 bg-white">
+    </button> -->
+    <img class="w-[450px] image-main-box slider rounded-lg absolute top-16 left-[31%] " src="./ecommerce-product-page-main/images/image-product-1.jpg" alt="">
+    <img class="w-[450px] image-main-box slider rounded-lg absolute top-16 left-[31%] hidden" src="./ecommerce-product-page-main/images/image-product-2.jpg" alt="">
+    <img class="w-[450px] image-main-box slider rounded-lg absolute top-16 left-[31%] hidden" src="./ecommerce-product-page-main/images/image-product-3.jpg" alt="">
+    <img class="w-[450px] image-main-box slider rounded-lg absolute top-16 left-[31%] hidden" src="./ecommerce-product-page-main/images/image-product-4.jpg" alt="">
+   <!--  <button onclick="nextSlideBox()" class="absolute top-[40%] left-[904px] pl-2 z-50 border border-white rounded-full w-8 h-8 bg-white">
       <img src="./ecommerce-product-page-main/images/icon-next.svg" alt="">
-    </button>
+    </button> -->
   </div>
     <div class="flex h-full w-full text-center absolute top-[80%] left-[30%]">
       <div>
-        <img  class="w-28 rounded-lg img-box actived" id="box-1" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
+        <img  class="w-28 hover:cursor-pointer rounded-lg img-box actived" id="box-1" src="./ecommerce-product-page-main/images/image-product-1-thumbnail.jpg" alt="">
       </div>
       <div class="mx-3">
-        <img  class="w-28 rounded-lg img-box" id="box-2" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
+        <img  class="w-28 hover:cursor-pointer rounded-lg img-box" id="box-2" src="./ecommerce-product-page-main/images/image-product-2-thumbnail.jpg" alt="">
       </div>
       <div>
-        <img  class="w-28 rounded-lg img-box" id="box-3" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
+        <img  class="w-28 hover:cursor-pointer rounded-lg img-box" id="box-3" src="./ecommerce-product-page-main/images/image-product-3-thumbnail.jpg" alt="">
       </div>
       <div class="ml-3">
-        <img  class="w-28 rounded-lg img-box" id="box-4" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
+        <img  class="w-28 hover:cursor-pointer rounded-lg img-box" id="box-4" src="./ecommerce-product-page-main/images/image-product-4-thumbnail.jpg" alt="">
       </div>
     </div>
 </div>
